@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+            background: rgb(255,255,255);
+            background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(213,213,213,1) 48%, rgba(255,255,255,1) 100%);
+            
+        }
+        .titulo, .descripcion, .titulo2{
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            
+            
+        }
+        .contenedor{
+            align-self: center;
+            text-align: center;
+            background-color: hsla(110, 16%, 29%, 0.137);
+            width: 35%;
+            border: 1px solid rgb(172, 168, 168);
+            border-radius: 10px;
+            margin: 5px;
+        }
+        #imagen{
+            border: 1px solid rgb(172, 168, 168);
+            border-radius: 25px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 class="titulo">Portafolio</h1>
+    <h2 class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, optio</h2>
+
+    <h2 class="titulo2">Proyecto</h2>
+
+    <div class="contenedor">
+        <h2>proyecto 1: pagina web </h2>
+        <img id="imagen" src="https://placehold.org/300x200/cccccc/000000?text=Hola+Mundo" alt="Place" /> <br>
+        <button id="boton" >Mostrar</button>
+        <p id="parrafo" >breve descripcion</p>
+    </div>
+
+    <div class="contenedor2 contenedor">
+        <h2>proyecto 2: pagina web 2 </h2>
+        <img id="imagen2" src="https://placehold.org/300x200/cccccc/000000?text=Hola+Mundo" alt="Place" /> <br>
+        <button id="boton2" >Mostrar</button>
+        <p id="parrafo2" >breve descripcion</p>
+    </div>
+
+
+    <script src="app1.js"></script>
+</body>
+</html>
