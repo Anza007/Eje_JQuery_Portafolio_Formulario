@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Formulario</title>
+    <style>
+        #contenedor{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        h1{
+            align-self: center;
+
+        }
+        #formulario{
+            align-self: center;
+            
+        }
+
+        input {
+            border: 1px solid #ccc; /* Borde neutro por defecto */
+            padding: 5px;
+            margin-bottom: 10px;
+            
+        }
+
+        .error{
+            border-color: red;
+            color: red;
+        }
+        .valid{
+            /* border-color: rgb(25, 219, 51); */
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+        <h1>Formulario</h1>
+        <form id="formulario">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" placeholder="Nombre" name="nombre"><br>
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" placeholder="Apellido" name="apellido"><br>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Email" name="email"><br>
+            <label for="comentario">Comentario</label>
+            <input type="text" id="comentario" placeholder="Comentario" name="comentario"><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.11.1/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.11.1/additional-methods.min.js"></script>
+    <script src="formu.js" ></script>
+</body>
+</html>
+
+<!-- // vienen 2 clases por defecto para manejar errores y validaciones
+(valid y error) se generan como clases tienen un estilo predetermindo
+pero se puede modificar en css agregando el nombre de la clase .error o .valid y generando color o que desee 
+para mejorar la visivilidad podemos dentro de validate() los nombre de las clases por ejemplo errorClass:"error",
+validClass:"valid", donde error y valid son las clases que creamos en css para modicar los estilos de los campos que no son validos o validos
+
+// importante cargar los plugin de jQuery que sean compartibles
+
+// pagina de documentacion y conseguir los pluging.
+https://jqueryvalidation.org/ -->
